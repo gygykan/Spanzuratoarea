@@ -1,2 +1,2 @@
 # Spanzuratoarea
-Creearea unui joc Spanzuratoarea.
+Crearea unui joc Spanzuratoarea.

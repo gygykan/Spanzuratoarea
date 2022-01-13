@@ -53,12 +53,16 @@ function addKeyboard() {
       button.value = alphabet[buttonIndex];
       button.className = 'keyboardButtons';
       button.onclick = function() {
-        button.disabled = true;
-        let letter = button.value;
-        validateLetter(letter);
+        click(button);
       };
       keyboard.appendChild(button);
   }
+}
+
+function click(button) {
+  button.disabled = true;
+  let letter = button.value;
+  validateLetter(letter);
 }
 
 function validateLetter(letter) {

@@ -8,11 +8,14 @@
   <h1> Hangman </h1>
   <button class = 'buttons' id = 'start' onclick = 'startGame()'>Start</button>
   <div id = 'life'></div>
+  <div class = 'animation' id = 'frames'>
+    <img class ='hangmanImg' id = 'hangman' src='./images/11.png'>
+  </div>
   <div id = 'hide' hidden>
-  <button class = 'buttons' onclick = 'getHint()'>Hint</button>
-  <button class = 'buttons' onclick = 'restart()'>Try again</button>
-</div>
+    <button class = 'buttons' onclick = 'getHint()'>Hint</button>
+    <button class = 'buttons' onclick = 'restart()'>Try again</button>
+  </div>
   <form id='word'></form> <br><br>
-  <div class ='buttonArea' id ='keyboard'></div>
+  <span class ='buttonArea' id ='keyboard'></span>
 </body>
 </html>

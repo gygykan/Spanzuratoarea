@@ -5,17 +5,20 @@
   <script src='script.js'></script>
 </head>
 <body>
-  <h1> Hangman </h1>
-  <button class = 'buttons' id = 'start' onclick = 'startGame()'>Start</button>
-  <div id = 'life'></div>
+  <h1> Spanzuratoarea </h1>
+  <button class = 'buttons' id = 'startSinglePlayer' onclick = 'singlePlayer()'>Singleplayer</button>
+  <button class = 'buttons' id = 'startMultiPlayer' onclick = 'multiPlayer()'>Multiplayer</button>
   <div class = 'animation' id = 'frames'>
-    <img class ='hangmanImg' id = 'hangman' src='./images/11.png'>
+    <img class ='hangmanImg' id = 'hangman' src='./images/0nn.png'>
   </div>
+  <div id = 'life'></div>
   <div id = 'hide' hidden>
-    <button class = 'buttons' onclick = 'getHint()'>Hint</button>
+    <!-- <button class = 'buttons' onclick = 'getHint()'>Hint</button> -->
     <button class = 'buttons' onclick = 'restart()'>Try again</button>
   </div>
   <form id='word'></form> <br><br>
   <span class ='buttonArea' id ='keyboard'></span>
+  <br><br>
+  <form id='newWord'></form>
 </body>
 </html>

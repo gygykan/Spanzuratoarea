@@ -8,14 +8,33 @@ body {
 }
 
 .keyboardButtons {
-    font-size: 14px;
-    padding: 0 10px;
+    font-size: 30px;
+    padding: 10 10 10 10px;
+    margin: 1px;
     line-height: 2;
     color: white;
     background: teal;
 }
 
-.showLives {
+.keyboardButtons:hover {
+  font-size: 30px;
+  padding: 5 10px;
+  line-height: 2;
+  color: white;
+  background: green;
+}
+
+.keyboardButtons:disabled {
+  font-size: 30px;
+  padding: 5 10px;
+  line-height: 2;
+  color: whitesmoke;
+  background: black;
+}
+
+/* .showLives */
+
+#life {
   color: red;
   font-weight: bold;
   font-size: 24px;
@@ -24,14 +43,15 @@ body {
 .animation {
   width: 312px;
   height: 230px;
-  background-color: skyblue;
+  background-color: white;
   border: 10px blue;
   position: relative;
-  left: 39%;
+  left: 43.5%;
 }
 
 .hangmanImg {
   position: absolute;
+  color: green;
   left: 0px;
   bottom: 0px;
 }
@@ -48,8 +68,16 @@ body {
   border: none;
 }
 
+.remainedLetters {
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  color: red;
+  text-align: center;
+  border: none;
+}
+
 .buttonArea {
-  width: 300px;
-  position: absolute;
-  left: 40%;
+  width: 900px;
+  position: center;
 }
